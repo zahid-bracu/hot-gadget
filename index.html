@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+      .carousel-indicators li  {
+        background-color: rgb(204, 204, 204);
+        width: 20px;
+        height: 10px;
+        border:  1px solid rgb(204, 204, 204);
+        border-radius: 10px;
+      }
+
+      .carousel-indicators .active{
+        background-color: rgb(245, 230, 16);
+        width: 40px;
+        border:  1px solid rgb(245, 230, 16);
+      }
+
+      .card img{
+        max-width: 250px;
+      }
+
+      .card{
+        border: 0px solid black;
+        box-shadow: 0px 0px 10px rgb(145, 145, 145);
+        min-height: 500px;
+        margin: 20px 0px;
+        padding: 7px 0px;
+      }
+
+      #cat:hover{
+        position: relative;
+        bottom: 3px;
+      }
+
+      .box{
+        width: 100%;
+        height: 150px;
+        background-image: linear-gradient(to right, rgb(32, 253, 253) , rgb(173, 255, 255));
+        box-shadow: 0px 0px 7px rgb(207, 207, 207);
+      }
+      .footer{
+        background-color: rgb(247, 247, 247);
+        padding:60px 0px;
+      }
+    </style>
+</head>
+<body>
+      <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <section class="container">
+              <a class="navbar-brand" href="#"><img src="./logo.png" class="img-fluid" width="80" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+        </nav>
+
+        
+        <!-- Carousel Slider -->
+        <section class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">1</li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1">2</li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2">3</li>
+            </ol>
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-12 col-lg-6 col-md-6 col-sm-10 ">
+                    <h3>Mack Book Pro</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla sed, quae officiis dolor quam?</p>
+                    <button class="btn btn-dark text-white">Buy Now</button>
+                  </div>
+                  <div class="col-12 col-lg-6 col-md-6 col-sm-10">
+                    <img src="./banner-products/product-1.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-12 col-lg-6 col-md-6 col-sm-10 ">
+                    <h3>Mack Book Pro</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla sed, quae officiis dolor quam?</p>
+                    <button class="btn btn-dark text-white">Buy Now</button>
+                  </div>
+                  <div class="col-12 col-lg-6 col-md-6 col-sm-10">
+                    <img src="./banner-products/product-2.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-12 col-lg-6 col-md-6 col-sm-10">
+                    <h3>Mack Book Pro</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla sed, quae officiis dolor quam?</p>
+                    <button class="btn btn-dark text-white">Buy Now</button>
+                  </div>
+                  <div class="col-12 col-lg-6 col-md-6 col-sm-10">
+                    <img src="./banner-products/product-3.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Card -->
+
+        <section class="container my-5">
+          <div class="d-flex  my-4 justify-content-between">
+            <h5>SmartPhones</h5>
+            <h5 class="text-warning">See All</h5>
+          </div>
+          <div class=" row">
+            <div class=" col-lg-4   col-md-12 col-sm-12 col-12">
+              <div class="card">
+                <img class="card-img-top m-auto" src="./phone/phone-1.png" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h4>$1250</h4>
+                  <button class="btn btn-dark">Buy Now</button>
+                </div>
+                 
+              </div>
+            </div>
+
+            <div class="  col-lg-4   col-md-12 col-sm-12 col-12">
+              <div class="card">
+                <img class="card-img-top  m-auto" src="./phone/phone-2.png" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h4>$1250</h4>
+                  <button class="btn btn-dark">Buy Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="  col-lg-4  col-md-12 col-sm-12 col-12">
+              <div class="card">
+                <img class="card-img-top m-auto" src="./phone/phone-3.png" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h4>$1250</h4>
+                  <button class="btn btn-dark">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card Laptop -->
+        <section class="container my-5">
+          <div class="d-flex  my-4 justify-content-between">
+            <h5>Laptop</h5>
+            <h5 class="text-warning">See All</h5>
+          </div>
+          <div class=" row">
+            <div class=" col-lg-4   col-md-12 col-sm-12 col-12">
+              <div class="card">
+                <img class="card-img-top m-auto" src="./laptop/product-1.png" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h4>$1250</h4>
+                  <button class="btn btn-dark">Buy Now</button>
+                </div>
+                 
+              </div>
+            </div>
+
+            <div class="  col-lg-4   col-md-12 col-sm-12 col-12">
+              <div class="card">
+                <img class="card-img-top  m-auto" src="./laptop/product-2.png" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h4>$1250</h4>
+                  <button class="btn btn-dark">Buy Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="  col-lg-4  col-md-12 col-sm-12 col-12">
+              <div class="card">
+                <img class="card-img-top m-auto" src="./laptop/product-3.png" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h4>$1250</h4>
+                  <button class="btn btn-dark">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <h4 class="text-center">Catagories</h4>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6  offset-lg-0  offset-md-0 col-md-6 col-sm-11 offset-sm-1 col-xs-11 offset-xs-1 col-11 offset-1">
+                <div class="row">
+                  <div class="col-5 offset-1 my-2">
+                    <img id="cat" src="Categories/bag.png"/>
+                  </div>
+                  <div class="col-6 my-2">
+                    <img id="cat" src="Categories/shoe.png"/>
+                  </div>
+                  <div class="col-5 offset-1 my-2">
+                    <img id="cat" src="Categories/perfume.png"/>
+                  </div>
+                  <div class="col-6 my-2">
+                    <img id="cat" src="Categories/products.png" style="max-width: 120px;"/>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img class="img-fluid" src="./Categories/pale-order.png" alt="">
+            </div>
+          </div>
+        </section>
+
+
+        <section class="container my-5">
+          <section class="box row justify-content-center align-items-center">
+            <div class="col-6 text-white">
+              <div class="ml-5">
+                <h3>NEWS LETTER</h3>
+                <p>Join us now to get all news and special offers</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter Your Email Here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-danger" type="button" id="button-addon2">Button</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+
+        <div class="footer">
+          <footer class="container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-4">
+                <img src="./logo.png" style="width: 120px;" alt="">
+                <p class="my-2">HotGadget © 2020 . All right Reserved</p>
+              </div>
+              <div class="col-2">
+                <ul class="" style="list-style-type:none;">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Support</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul class="" style="list-style-type:none;">
+                  <li>Our Feed</li>
+                  <li>Term and Condition</li>
+                  <li>Our Policy</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <h5>Stay Connected</h5>
+                <p>info@hotgadget.com</p>
+                <p>+88017-XXX-XXX</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+
+
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
