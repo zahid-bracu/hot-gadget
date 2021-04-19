@@ -2,6 +2,8 @@
     font-weight: 400;
 }
 
+
+
 .carousel-indicators li  {
     background-color: rgb(204, 204, 204);
     width: 20px;
@@ -38,6 +40,7 @@
   #cat:hover{
     position: relative;
     bottom: 3px;
+    cursor: pointer;
   }
 
   .box{
